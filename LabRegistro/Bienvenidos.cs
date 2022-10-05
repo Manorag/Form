@@ -16,14 +16,14 @@ namespace LabRegistro
         {
             InitializeComponent();
         }
-        int i = 1, k=1;
+        //int i = 1, k=1;
         void Agregar()
         {
             if (cbAccion.SelectedIndex == 0)
             {
                 Base.esperaservice.Enqueue(new Base
                 {
-                    Numero = k++,
+                    Numero = Base.k++,
                     Name = txtNombre.Text
                 });
             }
@@ -32,7 +32,7 @@ namespace LabRegistro
 
                 Base.esperacaja.Enqueue(new Base
                 {
-                    Numero = i++,
+                    Numero = Base.i++,
                     Name = txtNombre.Text
                 });
 

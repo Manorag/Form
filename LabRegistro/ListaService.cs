@@ -16,7 +16,6 @@ namespace LabRegistro
         {
             InitializeComponent();
         }
-        Bienvenidos bnv = new Bienvenidos();
         bool flag = false;
         DataTable dt = new DataTable(); //Crea un objeto para controlar columnas y celdas del dataview
         void Procedimiento()

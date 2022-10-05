@@ -17,7 +17,6 @@ namespace LabRegistro
             InitializeComponent();
             
         }
-        Bienvenidos bnv = new Bienvenidos();
         bool flag = false;
         DataTable dt = new DataTable();
 
