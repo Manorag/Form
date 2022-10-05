@@ -1,1 +1,1 @@
-# LabRegistro
+# LabRegistro C#
