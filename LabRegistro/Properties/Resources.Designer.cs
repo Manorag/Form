@@ -203,6 +203,16 @@ namespace LabRegistro.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap customer_person_people_woman_you_16281 {
+            get {
+                object obj = ResourceManager.GetObject("customer_person_people_woman_you_16281", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap emblemunreadable_93487 {
             get {
                 object obj = ResourceManager.GetObject("emblemunreadable_93487", resourceCulture);

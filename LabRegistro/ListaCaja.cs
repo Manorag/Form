@@ -20,7 +20,7 @@ namespace LabRegistro
         bool flag = false;
         DataTable dt = new DataTable();
 
-        void Procedimiento()
+        void Procedimiento(DataGridView dg)
         {
             dt.Clear();
             if (flag == false)
@@ -48,7 +48,12 @@ namespace LabRegistro
         {
             dgCaja.DataSource = null;
             dgCaja.DataSource = Base.esperacaja.ToList();
-            Procedimiento();
+            dgAtendidosCaja.DataSource = null;
+            dgAtendidosCaja.DataSource = Base.atendidoscaja.ToList();
+
+            Procedimiento(dgCaja);
+            Procedimiento(dgAtendidosCaja);
+            
         }
     }
 }

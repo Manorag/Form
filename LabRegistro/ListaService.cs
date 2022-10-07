@@ -18,7 +18,7 @@ namespace LabRegistro
         }
         bool flag = false;
         DataTable dt = new DataTable(); //Crea un objeto para controlar columnas y celdas del dataview
-        void Procedimiento()
+        void Procedimiento(DataGridView dg)
         {
             dt.Clear();
             if (flag == false)
@@ -45,7 +45,10 @@ namespace LabRegistro
         {
             dgService.DataSource = null;
             dgService.DataSource = Base.esperaservice.ToList();
-            Procedimiento();
+            dgAtendidosService.DataSource = null;
+            dgAtendidosService.DataSource = Base.atendidosservice.ToList();
+            Procedimiento(dgService);
+            Procedimiento(dgAtendidosService);
         }
     }
 }

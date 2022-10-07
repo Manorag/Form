@@ -21,5 +21,24 @@ namespace LabRegistro
         {
             this.Close();
         }
+
+        private void btnAtenderService_Click(object sender, EventArgs e)
+        {
+            Base.esperaservice.Dequeue();
+            MessageBox.Show("Atencion exitosa, puede retirarse de la cola. SBK");
+
+            Base.atendidosservice.Enqueue(new Base
+            {
+                Numero = int.Parse(txtTurnoService.Text),
+                Name = txtNomsService.Text
+            });
+            txtTurnoService.Clear();
+            txtNomsService.Clear();
+        }
+
+        private void btnSalir_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

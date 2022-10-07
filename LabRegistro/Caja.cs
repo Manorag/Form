@@ -26,5 +26,18 @@ namespace LabRegistro
         {
             this.Close();
         }
+
+        private void btnAtenderCaja_Click(object sender, EventArgs e)
+        {
+            Base.esperacaja.Dequeue();
+            MessageBox.Show("Atencion exitosa, puede retirarse de la cola. CAJA");
+            Base.atendidoscaja.Enqueue(new Base
+            {
+                Numero = int.Parse(txtTurnoCaja.Text),
+                Name = txtNomsCaja.Text
+            });
+            txtTurnoCaja.Clear();
+            txtNomsCaja.Clear();
+        }
     }
 }

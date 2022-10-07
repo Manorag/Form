@@ -15,6 +15,8 @@ namespace LabRegistro
 
         public static Queue<Base> esperacaja = new Queue<Base>();
         public static Queue<Base> esperaservice = new Queue<Base>();
+        public static Queue<Base> atendidoscaja = new Queue<Base>();
+        public static Queue<Base> atendidosservice = new Queue<Base>();
     }
 
 }
